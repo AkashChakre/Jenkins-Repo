@@ -3,8 +3,10 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh '''date
-              pwd'''
+                bat '''
+                echo %DATE%
+                cd
+                '''
       }
     }
 
